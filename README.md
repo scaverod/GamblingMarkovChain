@@ -1434,7 +1434,7 @@ La simulación se ha realizado, veaos cual es el resultado obtenido a lo largo d
 plot_bar_graph(df, INITIAL_CHIPS)
 ```
 
-![png](output_31_0.png)
+![png](images/output_31_0.png)
 
 En el gráfico anterior se muestran en el eje x los diferentes días del mes. En el eje y se muestra el número de fichas con las que el jugador salio del casino cada uno de los días. La línea negra muestra el número de fichas con el que el jugador entró al casino. Las barras coloreadas de color rojo son los días malos de nuestro jugador en los cuales perdió fichas. Por otro lado, los días con barras azules son días en los que el jugador obtuvo beneficio. Si un día no muestra barra es por que el jugador se fue ese día sin ninguna ficha.
 
@@ -1464,7 +1464,7 @@ Vamos a aprovechar esta pregunta para visualizar la evolución de la cantidad de
 plot_chips_evolution(chips)
 ```
 
-![png](output_36_0.png)
+![png](images/output_36_0.png)
 
 Por último, vamos a mostra rle histograma de frecuencia de la cantidad de fichas con las que le jugador es capaz de salir del casino a lo largo de un mes.
 
@@ -1474,7 +1474,7 @@ sns.distplot(df['Chips']);plt.xlim(0,None)
 
     (0, 157.4341804981768)
 
-![png](output_38_1.png)
+![png](images/output_38_1.png)
 
 ### c) ¿Cuál es el número medio de partidas jugadas antes de retirarse por quedarse sin dinero?
 
@@ -1686,13 +1686,13 @@ df = create_df(chips_avg, games_avg)
 plot_bar_graph(df, INITIAL_CHIPS)
 ```
 
-![png](output_47_0.png)
+![png](images/output_47_0.png)
 
 ```python
 plot_chips_evolution(chips_avg)
 ```
 
-![png](output_48_0.png)
+![png](images/output_48_0.png)
 
 ```python
 sns.distplot(df['Chips']);plt.xlim(0,None)
@@ -1700,7 +1700,7 @@ sns.distplot(df['Chips']);plt.xlim(0,None)
 
     (0, 31.515323668342266)
 
-![png](output_49_1.png)
+![png](images/output_49_1.png)
 
 ### Análisis de la distribución
 
@@ -1718,7 +1718,7 @@ sns.distplot(bet_eq_fc);plt.xlim(0,None)
 
     (0, 157.28544623443764)
 
-![png](output_51_1.png)
+![png](images/output_51_1.png)
 
 ```python
 pd.DataFrame(bet_eq_fc).describe()
@@ -1804,7 +1804,7 @@ La simulación se ha realizado, veaos cual es el resultado obtenido a lo largo d
 plot_bar_graph(df, INITIAL_CHIPS)
 ```
 
-![png](output_57_0.png)
+![png](images/output_57_0.png)
 
 ```python
 show_results(df, INITIAL_CHIPS, LEAVE_WITH_MAX)
@@ -1825,7 +1825,7 @@ show_results(df, INITIAL_CHIPS, LEAVE_WITH_MAX)
 plot_chips_evolution(chips)
 ```
 
-![png](output_59_0.png)
+![png](images/output_59_0.png)
 
 ```python
 df.describe()
@@ -3287,7 +3287,7 @@ plt.show()
 
     [/]
 
-![png](output_81_1.png)
+![png](images/output_81_1.png)
 
 ```python
 dic = {"Equiprobable": bet_eq_fc, "Aleatorio": bet_al_fc}
@@ -5380,7 +5380,7 @@ plot_results(valores_y, valores_t,x)
      0.18239525]
     Fichas obtenidas: 44.233333333333334
 
-![png](output_85_1.png)
+![png](images/output_85_1.png)
 
 #### Análisis de la solución obtenida
 
@@ -6567,7 +6567,7 @@ df = create_df(chips, games)
 plot_bar_graph(df, INITIAL_CHIPS)
 ```
 
-![png](output_93_0.png)
+![png](images/output_93_0.png)
 
 ```python
 show_results(df, INITIAL_CHIPS, LEAVE_WITH_MAX)
@@ -6588,7 +6588,7 @@ show_results(df, INITIAL_CHIPS, LEAVE_WITH_MAX)
 plot_chips_evolution(chips[:15])
 ```
 
-![png](output_95_0.png)
+![png](images/output_95_0.png)
 
 Por último, vamos a mostra rle histograma de frecuencia de la cantidad de fichas con las que le jugador es capaz de salir del casino a lo largo de un mes.
 
@@ -6598,7 +6598,7 @@ sns.distplot(df['Chips']);plt.xlim(0,None)
 
     (0, 108.20342422101784)
 
-![png](output_97_1.png)
+![png](images/output_97_1.png)
 
 ```python
 ruined = df[df['Chips'] == 0]
